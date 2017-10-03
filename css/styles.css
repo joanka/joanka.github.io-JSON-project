@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-height: 450px;
+  padding-top: 1.5vw;
+}
+
+.navbar, .menu, .item {  
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  line-height: 16px;
+  padding: 1vw 0 1vw 15vw;
+}
+
+.navbar__logo {
+  padding: 3px 0;
+  font-size: 2rem;
+  padding-right: 1vw;
+  line-height: 26px;  
+}
+
+.normal {
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar__contact {
+  padding-top: 2.7%;
+  margin-left: 35vw;
+}
+
+.menu {
+  background-color: #C33; 
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu__item {
+  width: 33.333%;
+  padding: 6px 5vw;
+  border-right: 1px #ccc solid;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.3s linear;
+}
+
+.menu__item:hover {
+  cursor: pointer;
+  background-color: #B52828;
+}
+
+.menu__item:first-child {
+  border-left: 1px #ccc solid;
+}
+
+.item {
+  background-color: #ccc;
+}
+
+.navbar__icons {
+  padding-top: 2.4vw;
+}
+
+.custom-fa:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 1.5rem;
+  padding-right: 0.5vw;
+}
+
+.item__name, .item__info {
+  text-align: center;
+  padding-bottom: 0.5vw;
+}
+
+.item__name {
+  font-size: 2.8rem;
+  padding-top: 1.5vw;
+}
+
+.item__details {
+  display: flex;
+  padding: 2vw 0;
+}
+
+.reservation {
+  padding-right: 10vw;
+}
+
+.reservation__name, .amenities__name {
+  /*color: #B52828;*/
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #C33;
+  border: 0;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-top: 16px;
+  transition: background-color 0.3s linear;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #B52828;
+}
+
+footer {
+  background-color: #333;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  padding: 1vw 0;
+}
+
+@media (max-width: 1200px) {
+  .navbar, .menu, .item {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  .navbar {
+    padding-right: 0;
+  }
+  .navbar__icons, .navbar__contact {
+    padding-top: 2.8vw;
+  }
+  .navbar__contact {
+    margin-left: 45vw;
+  }
+}
+
+@media (max-width: 979px) {
+  .navbar__icons, .navbar__contact {
+    padding-top: 3.5vw;
+  }
+  .navbar__contact {
+    margin-left: 35vw;
+  }
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .menu__item:first-child {
+    border-left: none;
+  }
+  .menu__item:last-child {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__icons {
+    padding-top: 4.5vw;
+  }
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar, .item {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .navbar__contact {
+    margin-left: 30vw;
+    padding-top: 4.5vw; 
+  }
+}
+
+@media (max-width: 568px) {
+  .navbar__logo {
+    margin-top: 0.5vw;
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .navbar__icons {    
+    min-width: 50px;
+  }
+  .custom-fa:before {
+    font-size: 1.2rem;
+    padding-right: 0;
+  }
+  .navbar__contact {
+    margin-left: 20vw;   
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar__logo {
+    font-size: 1.3rem;
+  }
+  .custom-fa:before {
+    font-size: 1rem;
+  }
+  .navbar__contact {
+    margin-left: 10vw;
+    font-size: 1.2rem;
+  }
+}
